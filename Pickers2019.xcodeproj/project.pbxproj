@@ -12,6 +12,11 @@
 		FB969B4B2301224A00D33CE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB969B492301224A00D33CE2 /* Main.storyboard */; };
 		FB969B4D2301224C00D33CE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB969B4C2301224C00D33CE2 /* Assets.xcassets */; };
 		FB969B502301224C00D33CE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB969B4E2301224C00D33CE2 /* LaunchScreen.storyboard */; };
+		FB969B582301238E00D33CE2 /* DataPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB969B572301238E00D33CE2 /* DataPickerViewController.swift */; };
+		FB969B5A230123C000D33CE2 /* SingleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB969B59230123C000D33CE2 /* SingleComponentPickerViewController.swift */; };
+		FB969B5C230123E400D33CE2 /* DuobleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB969B5B230123E400D33CE2 /* DuobleComponentPickerViewController.swift */; };
+		FB969B5E2301243400D33CE2 /* DependentComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB969B5D2301243400D33CE2 /* DependentComponentPickerViewController.swift */; };
+		FB969B602301244C00D33CE2 /* CustomPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB969B5F2301244C00D33CE2 /* CustomPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		FB969B4C2301224C00D33CE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB969B4F2301224C00D33CE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB969B512301224C00D33CE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB969B572301238E00D33CE2 /* DataPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPickerViewController.swift; sourceTree = "<group>"; };
+		FB969B59230123C000D33CE2 /* SingleComponentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleComponentPickerViewController.swift; sourceTree = "<group>"; };
+		FB969B5B230123E400D33CE2 /* DuobleComponentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuobleComponentPickerViewController.swift; sourceTree = "<group>"; };
+		FB969B5D2301243400D33CE2 /* DependentComponentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependentComponentPickerViewController.swift; sourceTree = "<group>"; };
+		FB969B5F2301244C00D33CE2 /* CustomPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,11 @@
 				FB969B452301224900D33CE2 /* AppDelegate.swift */,
 				FB969B472301224A00D33CE2 /* ViewController.swift */,
 				FB969B492301224A00D33CE2 /* Main.storyboard */,
+				FB969B572301238E00D33CE2 /* DataPickerViewController.swift */,
+				FB969B59230123C000D33CE2 /* SingleComponentPickerViewController.swift */,
+				FB969B5B230123E400D33CE2 /* DuobleComponentPickerViewController.swift */,
+				FB969B5D2301243400D33CE2 /* DependentComponentPickerViewController.swift */,
+				FB969B5F2301244C00D33CE2 /* CustomPickerViewController.swift */,
 				FB969B4C2301224C00D33CE2 /* Assets.xcassets */,
 				FB969B4E2301224C00D33CE2 /* LaunchScreen.storyboard */,
 				FB969B512301224C00D33CE2 /* Info.plist */,
@@ -135,8 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB969B5C230123E400D33CE2 /* DuobleComponentPickerViewController.swift in Sources */,
 				FB969B482301224A00D33CE2 /* ViewController.swift in Sources */,
+				FB969B5E2301243400D33CE2 /* DependentComponentPickerViewController.swift in Sources */,
 				FB969B462301224A00D33CE2 /* AppDelegate.swift in Sources */,
+				FB969B602301244C00D33CE2 /* CustomPickerViewController.swift in Sources */,
+				FB969B5A230123C000D33CE2 /* SingleComponentPickerViewController.swift in Sources */,
+				FB969B582301238E00D33CE2 /* DataPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
