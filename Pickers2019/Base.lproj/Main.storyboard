@@ -60,10 +60,38 @@
                     <view key="view" contentMode="scaleToFill" id="55k-sU-RXG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rk7-qq-8rj">
+                                <rect key="frame" x="0.0" y="20" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="gX4-cp-b4w" id="Nbj-tF-QyP"/>
+                                    <outlet property="delegate" destination="gX4-cp-b4w" id="IZ6-B1-slq"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pu5-T8-pxa">
+                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="gX4-cp-b4w" eventType="touchUpInside" id="Jy3-IX-7AL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rk7-qq-8rj" firstAttribute="trailing" secondItem="prW-bW-rKN" secondAttribute="trailing" id="GI0-Jz-MZH"/>
+                            <constraint firstItem="Pu5-T8-pxa" firstAttribute="top" secondItem="Rk7-qq-8rj" secondAttribute="bottom" constant="33" id="WwZ-t2-WEN"/>
+                            <constraint firstItem="prW-bW-rKN" firstAttribute="trailing" secondItem="Pu5-T8-pxa" secondAttribute="trailing" constant="137" id="YYB-0l-g4y"/>
+                            <constraint firstItem="Pu5-T8-pxa" firstAttribute="centerX" secondItem="55k-sU-RXG" secondAttribute="centerX" id="dkP-jS-vQ7"/>
+                            <constraint firstItem="Rk7-qq-8rj" firstAttribute="leading" secondItem="prW-bW-rKN" secondAttribute="leading" id="f8T-Tn-s1k"/>
+                            <constraint firstItem="Pu5-T8-pxa" firstAttribute="leading" secondItem="prW-bW-rKN" secondAttribute="leading" constant="137" id="gXp-Ki-9rZ"/>
+                            <constraint firstItem="Rk7-qq-8rj" firstAttribute="top" secondItem="prW-bW-rKN" secondAttribute="top" id="rZt-Ch-lOj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="prW-bW-rKN"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Duoble" image="doubleicon" id="i1Q-dp-fV7"/>
+                    <connections>
+                        <outlet property="duoblePicker" destination="Rk7-qq-8rj" id="VPW-mz-8Co"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XmZ-Vt-ZyS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
