@@ -17,10 +17,37 @@
                     <view key="view" contentMode="scaleToFill" id="9T2-Vd-XNJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zzR-dm-tfk">
+                                <rect key="frame" x="0.0" y="20" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="xPy-ho-Ffe" id="eay-9X-cfN"/>
+                                    <outlet property="delegate" destination="xPy-ho-Ffe" id="ljC-jR-GUf"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0te-Fn-RyS">
+                                <rect key="frame" x="137" y="266" width="46" height="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="xPy-ho-Ffe" eventType="touchUpInside" id="bLL-GO-eS6"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0te-Fn-RyS" firstAttribute="top" secondItem="zzR-dm-tfk" secondAttribute="bottom" constant="30" id="AeN-LE-r5x"/>
+                            <constraint firstItem="zzR-dm-tfk" firstAttribute="leading" secondItem="Kje-r4-uCP" secondAttribute="leading" id="C5j-Op-cdu"/>
+                            <constraint firstItem="zzR-dm-tfk" firstAttribute="trailing" secondItem="Kje-r4-uCP" secondAttribute="trailing" id="UEH-6X-YHY"/>
+                            <constraint firstItem="zzR-dm-tfk" firstAttribute="top" secondItem="Kje-r4-uCP" secondAttribute="top" id="n6Z-M5-tID"/>
+                            <constraint firstItem="0te-Fn-RyS" firstAttribute="leading" secondItem="Kje-r4-uCP" secondAttribute="leading" constant="137" id="q9t-rI-bhv"/>
+                            <constraint firstItem="0te-Fn-RyS" firstAttribute="centerX" secondItem="9T2-Vd-XNJ" secondAttribute="centerX" id="wcH-q7-C9d"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Kje-r4-uCP"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Single" image="singleicon" id="zGh-l6-TrU"/>
+                    <connections>
+                        <outlet property="singlePicker" destination="zzR-dm-tfk" id="XmD-ay-Swj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oKv-A5-qDL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
