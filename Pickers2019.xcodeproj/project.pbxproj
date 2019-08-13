@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB11DAF923025E29007C7CE3 /* crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB11DAF723025E29007C7CE3 /* crunch.wav */; };
+		FB11DAFA23025E29007C7CE3 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB11DAF823025E29007C7CE3 /* win.wav */; };
 		FB969B462301224A00D33CE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB969B452301224900D33CE2 /* AppDelegate.swift */; };
 		FB969B482301224A00D33CE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB969B472301224A00D33CE2 /* ViewController.swift */; };
 		FB969B4B2301224A00D33CE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB969B492301224A00D33CE2 /* Main.storyboard */; };
@@ -17,9 +19,12 @@
 		FB969B5C230123E400D33CE2 /* DuobleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB969B5B230123E400D33CE2 /* DuobleComponentPickerViewController.swift */; };
 		FB969B5E2301243400D33CE2 /* DependentComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB969B5D2301243400D33CE2 /* DependentComponentPickerViewController.swift */; };
 		FB969B602301244C00D33CE2 /* CustomPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB969B5F2301244C00D33CE2 /* CustomPickerViewController.swift */; };
+		FB969B6223017D6F00D33CE2 /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB969B6123017D6E00D33CE2 /* statedictionary.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB11DAF723025E29007C7CE3 /* crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crunch.wav; sourceTree = "<group>"; };
+		FB11DAF823025E29007C7CE3 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
 		FB969B422301224900D33CE2 /* Pickers2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pickers2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB969B452301224900D33CE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB969B472301224A00D33CE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +37,7 @@
 		FB969B5B230123E400D33CE2 /* DuobleComponentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuobleComponentPickerViewController.swift; sourceTree = "<group>"; };
 		FB969B5D2301243400D33CE2 /* DependentComponentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependentComponentPickerViewController.swift; sourceTree = "<group>"; };
 		FB969B5F2301244C00D33CE2 /* CustomPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerViewController.swift; sourceTree = "<group>"; };
+		FB969B6123017D6E00D33CE2 /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = statedictionary.plist; path = "../../../Разработка приложений/Pickers/Pickers/statedictionary.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB11DAF623025E29007C7CE3 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FB11DAF723025E29007C7CE3 /* crunch.wav */,
+				FB11DAF823025E29007C7CE3 /* win.wav */,
+			);
+			name = Sounds;
+			path = "../../../Разработка приложений/Pickers/Pickers/Sounds";
+			sourceTree = "<group>";
+		};
+		FB11DAFB23025E36007C7CE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB969B472301224A00D33CE2 /* ViewController.swift */,
+				FB969B572301238E00D33CE2 /* DataPickerViewController.swift */,
+				FB969B59230123C000D33CE2 /* SingleComponentPickerViewController.swift */,
+				FB969B5B230123E400D33CE2 /* DuobleComponentPickerViewController.swift */,
+				FB969B5D2301243400D33CE2 /* DependentComponentPickerViewController.swift */,
+				FB969B5F2301244C00D33CE2 /* CustomPickerViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FB969B392301224900D33CE2 = {
 			isa = PBXGroup;
 			children = (
@@ -64,17 +93,14 @@
 		FB969B442301224900D33CE2 /* Pickers2019 */ = {
 			isa = PBXGroup;
 			children = (
+				FB11DAFB23025E36007C7CE3 /* View */,
 				FB969B452301224900D33CE2 /* AppDelegate.swift */,
-				FB969B472301224A00D33CE2 /* ViewController.swift */,
 				FB969B492301224A00D33CE2 /* Main.storyboard */,
-				FB969B572301238E00D33CE2 /* DataPickerViewController.swift */,
-				FB969B59230123C000D33CE2 /* SingleComponentPickerViewController.swift */,
-				FB969B5B230123E400D33CE2 /* DuobleComponentPickerViewController.swift */,
-				FB969B5D2301243400D33CE2 /* DependentComponentPickerViewController.swift */,
-				FB969B5F2301244C00D33CE2 /* CustomPickerViewController.swift */,
 				FB969B4C2301224C00D33CE2 /* Assets.xcassets */,
 				FB969B4E2301224C00D33CE2 /* LaunchScreen.storyboard */,
 				FB969B512301224C00D33CE2 /* Info.plist */,
+				FB969B6123017D6E00D33CE2 /* statedictionary.plist */,
+				FB11DAF623025E29007C7CE3 /* Sounds */,
 			);
 			path = Pickers2019;
 			sourceTree = "<group>";
@@ -137,8 +163,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB11DAF923025E29007C7CE3 /* crunch.wav in Resources */,
 				FB969B502301224C00D33CE2 /* LaunchScreen.storyboard in Resources */,
 				FB969B4D2301224C00D33CE2 /* Assets.xcassets in Resources */,
+				FB11DAFA23025E29007C7CE3 /* win.wav in Resources */,
+				FB969B6223017D6F00D33CE2 /* statedictionary.plist in Resources */,
 				FB969B4B2301224A00D33CE2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
