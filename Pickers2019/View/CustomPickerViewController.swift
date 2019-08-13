@@ -57,7 +57,6 @@ class CustomPickerViewController: UIViewController, UIPickerViewDelegate, UIPick
         }
     }
     
-    
     // MARK: - Picer data sours methods
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 5
